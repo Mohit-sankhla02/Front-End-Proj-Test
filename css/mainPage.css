@@ -1,0 +1,107 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.upperBody {
+    height: 420px;
+    z-index: -1;
+    color: white;
+}
+
+/* Navbar styles */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    background-color: rgb(25, 25, 25);
+    box-shadow: 1px 3px 14px #000000;
+
+}
+
+nav .branding {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    margin-left: 35px;
+    /* align-items: center; */
+
+}
+
+nav .branding:hover {
+    cursor: pointer;
+}
+
+nav .menuOptions {
+    display: flex;
+    list-style: none;
+}
+
+nav .menuOptions .menuOption {
+    /* align-items: center; */
+    margin-right: 80px;
+    font-size: 16px;
+}
+
+nav .menuOptions .menuOption a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    padding: 10px 20px;
+    transition: 0.5s cubic-bezier(0.04, 1.04, 0.64, 0.62);
+    background-color: transparent;
+    border-radius: 30px;
+
+}
+
+nav .menuOptions .menuOption a:hover {
+    background-color: white;
+    color: black;
+}
+
+.upperBodyText {
+    position: relative;
+    padding: 6rem 5rem;
+    display: flex;
+    z-index: -1;
+    background-color: #111111;
+    align-items: center;
+}
+
+.upperBodyText h1 {
+    font-size: 4rem;
+    font-family: 'Raleway', sans-serif;
+    background: -webkit-linear-gradient(360deg, rgba(152, 69, 232, 1) 0%, rgba(51, 210, 255, 1) 25%, rgba(221, 87, 137, 1) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 20px 200px;
+}
+
+.upperBodyText p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    margin: 10px 200px;
+}
+
+.upperBodyText h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    margin: 30px 200px;
+}
+
+
+
