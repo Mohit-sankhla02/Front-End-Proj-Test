@@ -20,9 +20,10 @@ body{
 
 
 .upperBody {
-    /* height: 420px; */
+    height: 100vh;
     z-index: -1;
     color: white;
+    scroll-snap-align: start;
 }
 
 /* Navbar styles */
@@ -79,7 +80,7 @@ nav .menuOptions .menuOption a:hover {
 }
 
 .upperBodyText {
-    position: relative;
+    /* position: relative; */
     padding: 3.1rem 5rem;
     display: flex;
     z-index: -1;
@@ -128,16 +129,19 @@ section {
     gap: 20px 20px;
     z-index: -2;
     background-repeat: no-repeat;
+    scroll-snap-align: start;
 }
 
 .gaming {
     background: url('../public/gta_iv_city-wallpaper-1680x1050.jpg');
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .books {
     background: url("../public/pexels-min-an-694740.jpg");
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .film {
@@ -202,6 +206,57 @@ section .text p {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
 }
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 55vh;
+    padding: 70px 0 30px;
+    background: linear-gradient(to right, #000000, #ffffff);
+    color: white;
+    z-index: 5;
+    border-top-left-radius: 125px;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.footer-logo {
+    font-size: 3rem;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 30px;
+    letter-spacing: .1ch;
+}
+
+.col h2 {
+    width: fit-content;
+    margin-bottom:40px ;
+    position: relative;
+}
+
+.col h3 {
+    margin-bottom: 20px;
+}
+
+.col p{
+    margin: 10px 0px;
+}
+
+
 
 
 
