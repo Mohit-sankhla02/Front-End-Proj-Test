@@ -5,7 +5,7 @@
 
 html {
     overflow-x: hidden;
-    overflow-y: none;
+    overflow-y: unset;
     scroll-snap-type: y mandatory;
 }
 
@@ -89,8 +89,6 @@ nav .menuOptions .menuOption a:hover {
     margin-bottom: 20px;
 }
 
-
-
 .upperBodyText h1 {
     font-size: 4rem;
     font-family: 'Raleway', sans-serif;
@@ -106,16 +104,32 @@ nav .menuOptions .menuOption a:hover {
     margin: 10px 200px;
 }
 
-.upperBodyText h2 {
+.started-animation h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 24px;
-    display: flex;
-    align-items: center;
+    display: inline-block;
     margin: 30px 200px;
+    position: relative;
+    cursor: pointer;
+    color: white;
 }
 
-.btn {
-    padding: 5px 30px;
+.started-animation h2:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.started-animation h2:hover {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .photo {
