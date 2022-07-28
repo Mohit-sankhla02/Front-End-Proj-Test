@@ -3,21 +3,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
-/* Variables */
-
-
-
+html {
+    overflow-x: hidden;
+    overflow-y: none;
+    scroll-snap-type: y mandatory;
+}
 
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body{
     background-color: black;
 }
-
-
 
 .upperBody {
     height: 100vh;
@@ -118,7 +118,7 @@ nav .menuOptions .menuOption a:hover {
     padding: 5px 30px;
 }
 
-section {
+.photo {
     display: grid;
     height: 100vh;
     width: 100vw;
@@ -129,6 +129,9 @@ section {
     gap: 20px 20px;
     z-index: -2;
     background-repeat: no-repeat;
+}
+
+section {
     scroll-snap-align: start;
 }
 
@@ -207,19 +210,27 @@ section .text p {
     font-size: 1.6rem;
 }
 
+.bottom {
+    height: 100vh;
+}
+
+.bottom form {
+    height: 55vh;
+}
+
 footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    height: 55vh;
-    padding: 70px 0 30px;
-    background: linear-gradient(to right, #000000, #ffffff);
+    height: 45vh;
+    padding: 60px 0 30px;
+    background: linear-gradient(to right, #490000, #000000);
     color: white;
     z-index: 5;
-    border-top-left-radius: 125px;
     font-size: 16px;
     line-height: 20px;
     font-family: 'Montserrat', sans-serif;
+    float: bottom;
 }
 .row {
     width: 85%;
