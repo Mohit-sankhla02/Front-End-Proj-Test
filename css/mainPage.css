@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
 html {
     overflow-x: hidden;
@@ -90,11 +92,9 @@ nav .menuOptions .menuOption a:hover {
     height: 40vh;
 }
 
-
-
 .upperBodyText h1 {
-    font-size: 4rem;
-    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-family: 'Cinzel', serif;
     background: -webkit-linear-gradient(360deg, rgba(152, 69, 232, 1) 0%, rgba(51, 210, 255, 1) 25%, rgba(221, 87, 137, 1) 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -114,26 +114,50 @@ nav .menuOptions .menuOption a:hover {
     align-items: center;
     margin: 30px 200px;
 }
+
+#test2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#test2 h1 {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-size: 3.0rem;
+    display: inline-block;
+    background: -webkit-linear-gradient(360deg, rgba(152, 69, 232, 1) 0%, rgba(51, 210, 255, 1) 25%, rgba(221, 87, 137, 1) 50%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
 .upperBody-bottom {
-    /* height: auto; */
+    height: auto;
     display: flex;
     position: relative;
     justify-content: space-around;
     margin: auto 20px;
 }
- 
-.upperBody-bottom section {
+
+.upperBody-bottom .item {
     height: auto;
     display: flex;
     align-items: center;
-    box-shadow: #29323c 6px 6px 10px;
-} 
+    box-shadow: 0.5rem 0.5rem 20px#02ffffaf, -0.5rem -0.5rem 20px #ff5353;
+    transition: 0.4s ease-in;
+}
 
-.upperBody-bottom section img {
+.upperBody-bottom .item:hover {
+    box-shadow: 0.5rem 0.5rem 20px#ff5353, -0.5rem -0.5rem 20px #02ffffaf;
+}
+
+.upperBody-bottom .item img {
     width: 200px;
     filter: invert(100%);
     height: auto;
-    
+    margin: 20px;
 }
 
 .photo {
@@ -235,18 +259,18 @@ section .text p {
 
 }
 
-form{
+form {
     position: relative;
     padding: 50px;
     /* text-align: center; */
     height: 600px;
 }
 
-fieldset{
+fieldset {
     height: 200px;
 }
 
-legend{
+legend {
     letter-spacing: 4px;
     padding: 5px;
     font-family: 'Bebas Neue', cursive;
@@ -256,20 +280,26 @@ legend{
 }
 
 
-input{
-    
+input {
+
     margin: 0;
     border: none;
     padding: 10px;
     width: 270px;
     transition: 0.3s ease-in-out;
+    background: transparent;
+    color: white;
+    border-bottom: 1px solid white;
 }
 
 input:focus {
     width: 400px;
+    outline: none;
+
+    margin-right: 2rem;
 }
 
-button{
+button {
     /* position: absolute; */
     /* right: 100px; */
     /* display: inline; */
@@ -280,13 +310,13 @@ button{
     cursor: pointer;
     /* margin: 20px; */
     height: 57px;
-    text-align:center;
+    text-align: center;
     border: none;
     background-size: 300% 100%;
     border-radius: 10px;
-    border-top-left-radius:0px ;
-    border-bottom-left-radius:0px ;
-    -moz-transition:all 0.4s ease-in-out ;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -moz-transition: all 0.4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
@@ -294,7 +324,7 @@ button{
     box-shadow: 0 1px 0px 0 rgba(45, 54, 65, 0.75);
 }
 
-button:hover{
+button:hover {
 
     background-position: 100% 0;
     -moz-transition: all .4s ease-in-out;
@@ -303,11 +333,11 @@ button:hover{
     transition: all .4s ease-in-out;
 }
 
-button:focus{
+button:focus {
     outline: none;
 }
 
-.test{
+.test {
     display: flex;
     /* width: 500px; */
     /* justify-content: space-evenly; */
@@ -382,6 +412,7 @@ footer {
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
     transition: background-size 400ms;
+    animation: background-size infinite;
 }
 
 .col a:hover {
